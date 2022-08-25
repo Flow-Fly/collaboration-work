@@ -5,11 +5,8 @@ router.get("/", (req, res, next) => {
 })
 
 router.get("/about", (req, res, next) => {
+	console.log("Here we go !")
 	res.json({ message: "I don't have any about page!" })
-})
-
-router.get(`/some-route`, (req, res, next) => {
-  res.json({message: `hello!`});
 })
 
 // You put the next routes here 👇
